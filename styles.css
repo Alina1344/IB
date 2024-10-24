@@ -1,0 +1,163 @@
+/* Общие стили */
+
+
+
+body {
+    font-family: 'Unbounded', sans-serif;
+    font-size: 18px; /* Увеличенный размер текста */
+    background-color: #E7E3DB;
+    margin: 0;
+    padding: 20;
+    line-height: 1.8;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav {
+    background-color: #E7E3DB;
+    padding: 1.5rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #382E25;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #382E25;
+    transition: width .3s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+/* Заголовки при наведении */
+h1:hover {
+    font-family: 'Unbounded', sans-serif; /* Можно добавить другой шрифт */
+    font-weight: 400;
+    text-align: center;
+    color: #382E25; /* Изменить цвет текста при наведении */
+}
+
+
+.empty-block {
+    background-color: #382E25;
+    height: 50px; /* Настрой высоту блока по своему желанию */
+    width: 100%;  /* Полная ширина */
+}
+
+
+/* Лид: выделенный вводный текст */
+.lead {
+    font-size: 25px;
+    color: #556832; 
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Заголовки */
+h1 {
+    font-family: 'Unbounded', serif;
+    font-size: 6em; /* Размер H1 */
+    text-align: center;
+    color: #9F2436;
+    margin-bottom: 1rem;
+	line-height:0.9em	
+   
+}
+
+h2 {
+
+    color: #382E25;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    max-width: 850px; /* Установите максимальную ширину для текста (примерно 60 символов) */
+    margin: 0 auto; /* Центрируйте контейнер */
+    padding: 20px; /* Добавьте отступы */
+}
+
+/* Оформление основного текста */
+p {
+    color: #382E25;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    max-width: 850px; /* Установите максимальную ширину для текста (примерно 60 символов) */
+    margin: 0 auto; /* Центрируйте контейнер */
+    padding: 20px; /* Добавьте отступы */
+}
+
+/* Линия под заголовком */
+hr {
+    border: none;
+    height: 1px;
+    
+    margin: 1rem 0;
+}
+
+
+
+/* Hover-эффекты и плавные переходы */
+a, p, h1, h2 {
+    transition: font-weight 1.5s ease,color 1.5s ease, background-color 1.5s ease;
+}
+
+
+.quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #9F2436; /* Цвет выделения */
+    border-left: 5px solid #556832; /* Вертикальная линия слева */
+    padding-left: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    line-height: 1.6;
+}
+
+
+/* Адаптивная вёрстка для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .lead {
+        font-size: 1.3rem;
+    }
+}
