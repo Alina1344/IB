@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #E7E3DB;
+    background-color:#E7E3DB;
     padding: 1.5rem;
     text-align: center;
     position: sticky;
@@ -90,6 +90,7 @@ h1 {
     color: #9F2436;
     margin-bottom: 1rem;
 	line-height:0.9em	
+    
    
 }
 
@@ -98,11 +99,11 @@ h2 {
     color: #382E25;
     font-size: 30px;
     text-align: left;
-    margin-bottom: 1rem;
-    margin-top: 2rem;
-    max-width: 850px; /* Установите максимальную ширину для текста (примерно 60 символов) */
-    margin: 0 auto; /* Центрируйте контейнер */
-    padding: 20px; /* Добавьте отступы */
+    margin-bottom: 0.6rem;
+    margin-top: 3rem;
+    max-width: 800px; /* Установите максимальную ширину для текста (примерно 60 символов) */
+    margin: 0 auto 0.5rem;
+    padding-top: 2rem; /* Регулируемое расстояние перед подзаголовком */
 }
 
 /* Оформление основного текста */
@@ -110,9 +111,9 @@ p {
     color: #382E25;
     text-align: left;
     margin-bottom: 1.5rem;
-    max-width: 850px; /* Установите максимальную ширину для текста (примерно 60 символов) */
+    max-width: 800px; /* Установите максимальную ширину для текста (примерно 60 символов) */
     margin: 0 auto; /* Центрируйте контейнер */
-    padding: 20px; /* Добавьте отступы */
+    padding: 10px; /* Добавьте отступы */
 }
 
 /* Линия под заголовком */
@@ -137,16 +138,28 @@ a, p, h1, h2 {
     color: #9F2436; /* Цвет выделения */
     border-left: 5px solid #556832; /* Вертикальная линия слева */
     padding-left: 20px;
-    margin: 20px auto;
+    margin: 40px auto;
     max-width: 800px;
     line-height: 1.6;
 }
 
 
+.quote footer {
+    text-align: left; /* Выравнивание текста автора вправо */
+    font-size: 1.5rem; /* Размер шрифта для автора */
+    
+    color: #9F2436; /* Цвет текста автора */
+    margin-top: 10px; /* Отступ сверху для отделения от цитаты */
+  
+}
+
+
+
+
 /* Адаптивная вёрстка для мобильных устройств */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 
     h2 {
